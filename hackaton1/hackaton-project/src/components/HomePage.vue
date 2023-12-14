@@ -13,6 +13,7 @@
         <img src="@/assets/téléchargement.jpg" alt="Description de l'image 2" />
         <p>Description de l'image 2</p>
       </div>
+
       <!-- Ajoutez d'autres éléments d'image ici -->
     </div>
   </div>
@@ -22,6 +23,9 @@
 export default {
   name: 'HomePage',
 };
+fetch('http://127.0.0.1:5001/votes/votes/15')
+    .then(res => res.json())
+    .then(data => console.log(data));
 </script>
 
 <style scoped>
